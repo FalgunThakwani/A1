@@ -1,0 +1,141 @@
+<body>
+      <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
+        <div class="container">
+            <a class="navbar-brand d-flex w-50 me-auto" href="#"><i class="bi bi-hypnotize"></i>&nbsp; KHEL</a>
+          
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                <ul class="navbar-nav w-100 justify-content-center">
+                   
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Events</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Facilities</a>
+                          </li>
+               
+                </ul>
+                <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  <div class="main">
+   
+    <!-- <div class="backButton" style="padding-left:5px;">
+      <a href="" style="font-size:20px;"> Back </a>
+    </div> -->
+
+    <div class="pageTitle" style="padding-top:4%;padding-left:6%; padding-bottom:3%;">
+        <p class="display-5" style="font-size: 40px;">YOUR CART</p>
+        <hr style="width: 94%;">
+    </div>
+
+  <div class="container" style="display: flex;">
+<div class="leftSide" style="width:60%; float:left;">
+<div class="itemScroll">
+<div class="itemBlock1">
+  <div class="itemImage">
+    <!-- Image used from below website. Offers free wallpaper
+        https://wallpapertag.com/wallpaper/middle/c/2/a/357314-basketball-court-background-2560x1920-iphone.jpg#.Y-QmfwyafMs.link-->
+    <img src="../assets/images/basketBallCourt.jpg" height="110px" width="110px"> 
+  </div>
+  <div class="aboutItem">
+    <h2 class="itemTitle display-5">Basket Ball Court</h2>
+      <h4 class="display-5 itemSubTitle">Booking for</h4>
+      <h4 class="itemSubTitle2 display-5">Falgun Jairaj Thakwani</h4>
+  </div>
+  <div class="itemDate">
+    <p>Sat, Feb 4 2023</p>
+    <p>7:00 am to 8:00 am</p>
+  </div>
+  <div class="itemQuantity">
+<p>x1</p>
+
+  </div>
+  <div class="unitPrice">
+    <h2>$0.0</h2>
+  </div>
+
+</div>
+<div class="itemBlock1">
+  <div class="itemImage">
+    <img src="../assets/images/swimlane.jfif" height="110px" width="110px"> 
+  </div>
+  <div class="aboutItem">
+    <h2 class="itemTitle display-5">Swim Lane</h2>
+      <h4 class="display-5 itemSubTitle">Booking for</h4>
+      <h4 class="itemSubTitle2 display-5">Falgun Jairaj Thakwani</h4>
+  </div>
+  <div class="itemDate">
+    <p>Sat, Feb 4 2023</p>
+    <p>7:00 am to 8:00 am</p>
+  </div>
+  <div class="itemQuantity">
+<p>x1</p>
+
+  </div>
+  <div class="unitPrice">
+    <h2>$0.0</h2>
+  </div>
+
+</div>
+</div>
+<br>
+<br>
+<div class="promoCode">
+  <div class="promoCodeTitle display-5">
+    <h3 class="promoCodeTitle display-5" style="font-size:45%;">Have a promo code?Enter your code</h3>
+  </div>
+  <div class="promoCodeField" style="display: flex;">
+    <form style="width: 80%;">
+      <input id="promoValue" class="no-outline" type="text" name="Coupon" placeholder="Coupon Code" style="width:50%;" #coupon>
+      <input type="button" value="Apply" class="btn btn-outline-info" style="margin-left: 20px;" (click)="formHandle(coupon.value)">
+    </form>
+      <i class="bi bi-arrow-clockwise icon-white" style="float:right"> <a href="" style="padding-left:10px ;">UPDATE CART</a></i>
+  </div>
+  <span id="invalidPromo" [ngStyle]="{color:color}">{{msg}}</span>
+</div>
+
+</div>
+<div class="headerDivider"></div>
+<div name="rightSide" style="width: 40%; float:right">  
+<h2>CART TOTAL</h2>
+<hr>
+<div class="cartSummaryLeft" style="width: 70%; float:left">
+  <div>
+    <p>Subtotal </p>
+    <p>Tax</p>
+    <p>Discount</p>
+    <hr>
+    <h2>Total</h2>
+  </div>
+</div>
+<div class="cartSummaryRight" style="width: 30%; float:right">
+  <p>$0.0</p>
+  <p>$0.0</p>
+  <p>$0.0</p>
+  <hr>
+  <h2>$0.0</h2>
+</div>
+<div class="buttons">
+  <button type="button"  routerLink="/checkout" class="btn btn-secondary btn-lg">CHECKOUT</button>
+
+</div>
+<br>
+<a routerLink="/home" style="display: flex; padding-left:25%;">CONTINUE SHOPPING</a>
+</div>
+  </div>
+  </div>
+</body>
